@@ -1,0 +1,18 @@
+name: Quor support
+description: Report an app issue or ask a general privacy question.
+title: "[Support] "
+body:
+  - type: markdown
+    attributes:
+      value: "This request will be public. Do not include prescription labels, medicine names, health records, or personal contact information."
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you need help with?
+      description: Describe the app behavior without personal health information.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: iOS and Quor versions (optional)
